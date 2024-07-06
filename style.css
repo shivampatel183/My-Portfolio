@@ -1,0 +1,547 @@
+* {
+  margin: 0px 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: black;
+  font-family: source-serif-pro, 'Source Serif Pro', 'LyonDisplay-Medium', serif;
+}
+
+#preloader {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.pre {
+  font-size: 100PX;
+  font-family: 'Italiana', sans-serif;
+  background-color: rgb(0, 0, 0);
+  display: block;
+  color: white;
+}
+
+
+
+
+
+
+
+.out {
+  padding: 0px 13%;
+}
+
+#navbar {
+  display: flex;
+  font-family: 'Roboto Condensed', 'Asap Condensed', 'neue-haas-unica', sans-serif;
+  position: fixed;
+  z-index: 9;
+  top: -65px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 74%;
+  padding: 15px 13%;
+  background-color: black;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+#navbar li a {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar h2 {
+  font-size: 2em;
+  font-family: source-serif-pro, 'Source Serif Pro', 'Lyon Display Web', 'LyonDisplay-Medium', serif;
+  letter-spacing: -3px;
+  font-weight: 900;
+}
+
+.navbar {
+  display: flex;
+  font-family: 'Roboto Condensed', 'Asap Condensed', 'neue-haas-unica', sans-serif;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 0px;
+  align-items: center;
+  border-bottom: solid 0.6px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  padding-left: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+li a:hover {
+  opacity: 0.8;
+}
+
+.intro {
+  display: flex;
+}
+
+.intro .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro .left img {
+  width: 100%;
+}
+
+.img {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.intro .right {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro .right h1 {
+  font-size: 55px;
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+
+}
+
+.intro .right div {
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 22px;
+  color: #404040;
+}
+
+.title {
+  margin-top: 25px;
+  display: inline-block;
+  font-family: 'Roboto Condensed', 'Asap Condensed', 'neue-haas-unica', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 23px;
+  text-transform: uppercase;
+  border-bottom: 3px solid black;
+  white-space: nowrap;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.edu {
+  margin: 10px;
+}
+
+.education {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill {
+  align-items: center;
+  margin: 10px;
+}
+
+.skill div {
+  padding: 5px;
+}
+
+div p,
+h4 {
+  color: #404040;
+  padding: 6px;
+  padding: 6px;
+  font-size: 14px;
+  line-height: 18px;
+  overflow-wrap: break-word;
+}
+
+.contect {
+  background: #000000;
+  color: white;
+  padding: 10px 13%;
+  margin-top: 20px;
+}
+
+.project {
+  background: #111111;
+  color: white;
+  padding: 10px 13%;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.pro {
+  display: flex;
+  overflow-x: auto;
+  margin: 20px 10px;
+}
+
+.pro .item2 p {
+  color: #afafaf;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 5px;
+}
+
+.pro .item2 h3 {
+  padding: 5px;
+  font-family: source-serif-pro, 'Source Serif Pro', 'LyonDisplay-Medium', serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+.pro::-webkit-scrollbar {
+  height: 8px; 
+}
+.pro::-webkit-scrollbar-track {
+  background: #ffffff11;
+  border-radius: 50px;
+}
+
+.item2 {
+  flex: 0 0 32%;
+  margin: 20px 10px;
+}
+
+.video,
+.text {
+  width: 100%;
+}
+
+.video video {
+  width: 100%;
+}
+
+.video img {
+  width: 100%;
+}
+
+.fa:hover {
+  opacity: 0.9;
+}
+
+.fa-linkedin,
+.fa-github {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  margin: 5px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.top,
+.down {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.con2 {
+  border-top: 0.5px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+  width: 48%;
+  height: 200px;
+  padding: 40px;
+}
+.con21{
+  border-top: 0.5px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.5);
+  width: 48%;
+  height: 200px;
+  padding: 40px;
+}
+.con21 p,
+.con2 p {
+  color: rgb(202, 202, 202);
+}
+
+#Auth_50_Form_Footer {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.footerEntryBox {
+  background: black;
+  color: white;
+  border: none;
+  border-bottom: 1px solid #757575;
+  padding: 2px;
+  font-size: 15px;
+  margin-bottom: 20px !important;
+  outline: none; 
+}
+
+.footerEntryBox:focus {
+  border-bottom: 1px solid #ffffff; 
+}
+
+.box {
+  margin-top: 10px;
+}
+
+
+.box a {
+  display: inline-block;
+  color: #eee;
+  font-family: 'HelveticaNeueW01-75Bold', 'HelveticaNeue Bold', 'Helvetica LT Std Bold', Helvetica, 'Roboto Condensed', 'Asap Condensed', 'neue-haas-unica', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  border: 1px solid #999;
+  padding: 6px 11px;
+  border-radius: 0px;
+  letter-spacing: .3px;
+  transition: all 0.05s ease-in-out;
+}
+
+.box a:hover {
+  background-color: white;
+  color: #000000;
+  font-weight: 700;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b1b1b1;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e6e6e6;
+  transition: all 0.2s ease-in-out;
+}
+
+.LastLine {
+  font-size: 14px;
+  color: #cccccc;
+  text-align: center;
+  margin: 28px 0px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .img {
+    padding: 0px;
+  }
+
+  #navbar {
+    padding: 10px 13%;
+  }
+
+  .navbar h2 {
+    font-size: 2em;
+    letter-spacing: -1px;
+    font-weight: 900;
+  }
+
+  .navbar {
+    padding: 10px 0px;
+  }
+
+  #navbar li a,
+  .navbar li a {
+    padding-left: 5px;
+    font-size: 10px;
+  }
+
+  #navbar h2,
+  .navbar h2 {
+    font-size: 15px;
+  }
+
+  .intro .left {
+    width: 100%;
+  }
+
+  .intro .left img {
+    width: 100%;
+  }
+
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro .right h1 {
+    font-size: 16px;
+
+  }
+
+  .intro .right {
+    padding: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .left {
+    width: 45%;
+  }
+
+  .intro .right div {
+    font-size: 9px;
+    line-height: 10px;
+  }
+
+  .title {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .item2 {        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 90%;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  div p,
+  h4,
+  .pro .item2 p {
+    font-size: 9px;
+    line-height: 10px;
+  }
+
+  .pro .item2 h3 {
+    font-size: 10px;
+  }
+
+  .video {
+    width: 80%;
+  }
+
+  .text {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .resume a,
+  .repo a {
+    text-decoration: none;
+    color: white;
+    padding: 0px;
+  }
+
+  .repo {
+    height: 35px;
+    width: 113px;
+    font-size: 10px;
+  }
+
+  .con2,
+  .con21 {
+    padding: 10px 5px;
+    width: 80%;
+    height: 150px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+    }
+  
+  .contect {
+    padding: 5px 2%;
+    margin-top: 5px;
+  }
+
+  .top {
+    margin: 0px 25px;
+    padding: 5px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5)
+  }
+
+  .down {
+    margin: 5px;
+    flex-direction: column;
+  }
+
+  .resume {
+    width: 113px;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+
+  .footerEntryBox {
+    padding: 2px;
+    font-size: 10px;
+    margin-bottom: 10px !important;
+  }
+
+  .footerSU {
+    width: 100px;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+
+  .box a{
+    font-size: 9px;
+    line-height: 10px;
+  }
+  .LastLine {
+    font-size: 10px;
+    margin: 28px 0px;
+  }
+  
+}
