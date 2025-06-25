@@ -1,6 +1,5 @@
 * {
   margin: 0px 0px;
-
 }
 
 html {
@@ -9,7 +8,7 @@ html {
 
 body {
   color: black;
-  font-family: source-serif-pro, 'Source Serif Pro', 'LyonDisplay-Medium', serif;
+  font-family: source-serif-pro, "Source Serif Pro", "LyonDisplay-Medium", serif;
 }
 
 #preloader {
@@ -22,18 +21,12 @@ body {
 }
 
 .pre {
-  font-size: 100PX;
-  font-family: 'Italiana', sans-serif;
+  font-size: 100px;
+  font-family: "Italiana", sans-serif;
   background-color: rgb(0, 0, 0);
   display: block;
   color: white;
 }
-
-
-
-
-
-
 
 .out {
   padding: 0px 13%;
@@ -41,7 +34,8 @@ body {
 
 #navbar {
   display: flex;
-  font-family: 'Roboto Condensed', 'Asap Condensed', 'neue-haas-unica', sans-serif;
+  font-family: "Roboto Condensed", "Asap Condensed", "neue-haas-unica",
+    sans-serif;
   position: fixed;
   z-index: 9;
   top: -65px;
@@ -64,14 +58,16 @@ body {
 
 .navbar h2 {
   font-size: 2em;
-  font-family: source-serif-pro, 'Source Serif Pro', 'Lyon Display Web', 'LyonDisplay-Medium', serif;
+  font-family: source-serif-pro, "Source Serif Pro", "Lyon Display Web",
+    "LyonDisplay-Medium", serif;
   letter-spacing: -3px;
   font-weight: 900;
 }
 
 .navbar {
   display: flex;
-  font-family: 'Roboto Condensed', 'Asap Condensed', 'neue-haas-unica', sans-serif;
+  font-family: "Roboto Condensed", "Asap Condensed", "neue-haas-unica",
+    sans-serif;
   flex-direction: row;
   justify-content: space-between;
   padding: 15px 0px;
@@ -136,7 +132,6 @@ li a:hover {
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-
 }
 
 .intro .right div {
@@ -149,7 +144,8 @@ li a:hover {
 .title {
   margin-top: 25px;
   display: inline-block;
-  font-family: 'Roboto Condensed', 'Asap Condensed', 'neue-haas-unica', sans-serif;
+  font-family: "Roboto Condensed", "Asap Condensed", "neue-haas-unica",
+    sans-serif;
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 0px;
@@ -219,6 +215,7 @@ h4 {
 
 .pro .item2 p {
   color: #afafaf;
+  border-radius: 20px;
   font-size: 14px;
   line-height: 18px;
   padding: 5px;
@@ -226,22 +223,24 @@ h4 {
 
 .pro .item2 h3 {
   padding: 5px;
-  font-family: source-serif-pro, 'Source Serif Pro', 'LyonDisplay-Medium', serif;
+  font-family: source-serif-pro, "Source Serif Pro", "LyonDisplay-Medium", serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
 }
 .pro::-webkit-scrollbar {
-  height: 8px; 
+  height: 8px;
 }
 .pro::-webkit-scrollbar-track {
   background: #ffffff11;
   border-radius: 50px;
 }
-
 .item2 {
   flex: 0 0 32%;
   margin: 20px 10px;
+  background-color: rgb(19 19 19);
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .video,
@@ -272,7 +271,6 @@ h4 {
   transition: all 0.2s ease-in-out;
 }
 
-
 .top,
 .down {
   display: flex;
@@ -289,7 +287,7 @@ h4 {
   height: 200px;
   padding: 40px;
 }
-.con21{
+.con21 {
   border-top: 0.5px solid rgba(255, 255, 255, 0.5);
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
   border-left: 0.5px solid rgba(255, 255, 255, 0.5);
@@ -316,22 +314,23 @@ h4 {
   padding: 2px;
   font-size: 15px;
   margin-bottom: 20px !important;
-  outline: none; 
+  outline: none;
 }
 
 .footerEntryBox:focus {
-  border-bottom: 1px solid #ffffff; 
+  border-bottom: 1px solid #ffffff;
 }
 
 .box {
   margin-top: 10px;
 }
 
-
 .box a {
   display: inline-block;
   color: #eee;
-  font-family: 'HelveticaNeueW01-75Bold', 'HelveticaNeue Bold', 'Helvetica LT Std Bold', Helvetica, 'Roboto Condensed', 'Asap Condensed', 'neue-haas-unica', sans-serif;
+  font-family: "HelveticaNeueW01-75Bold", "HelveticaNeue Bold",
+    "Helvetica LT Std Bold", Helvetica, "Roboto Condensed", "Asap Condensed",
+    "neue-haas-unica", sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 20px;
@@ -339,7 +338,7 @@ h4 {
   border: 1px solid #999;
   padding: 6px 11px;
   border-radius: 0px;
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
   transition: all 0.05s ease-in-out;
 }
 
@@ -348,7 +347,6 @@ h4 {
   color: #000000;
   font-weight: 700;
 }
-
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -374,8 +372,6 @@ h4 {
   text-align: center;
   margin: 28px 0px;
 }
-
-
 
 @media only screen and (max-width: 600px) {
   .img {
@@ -421,7 +417,6 @@ h4 {
 
   .intro .right h1 {
     font-size: 16px;
-
   }
 
   .intro .right {
@@ -445,7 +440,7 @@ h4 {
     line-height: 12px;
   }
 
-  .item2 {        
+  .item2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -501,8 +496,8 @@ h4 {
     justify-content: center;
     flex-direction: column;
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
-    }
-  
+  }
+
   .contect {
     padding: 5px 2%;
     margin-top: 5px;
@@ -511,7 +506,7 @@ h4 {
   .top {
     margin: 0px 25px;
     padding: 5px;
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5)
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
   }
 
   .down {
@@ -537,7 +532,7 @@ h4 {
     margin-top: 5px;
   }
 
-  .box a{
+  .box a {
     font-size: 9px;
     line-height: 10px;
   }
@@ -545,5 +540,4 @@ h4 {
     font-size: 10px;
     margin: 28px 0px;
   }
-  
 }
