@@ -196,7 +196,7 @@ h3 {
   object-fit: cover;
   border-radius: 0;
   box-shadow: none;
-  border: 1px solid rgba(17, 17, 17, 0.07);
+  border: 30px solid rgba(17, 17, 17, 0.07);
 }
 
 .intro .right h1 {
