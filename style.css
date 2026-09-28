@@ -445,6 +445,38 @@ h3 {
   padding: 18px 0;
 }
 
+.nav-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 4px 0;
+  background: #fff;
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.nav-toggle[aria-expanded="true"] span:first-child {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] span:last-child {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
 .brand {
   color: white;
   font-size: 1.8rem;
@@ -921,18 +953,35 @@ h3 {
 
 @media only screen and (max-width: 760px) {
   .nav-wrap {
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 12px;
     padding: 14px 0;
   }
 
+  .nav-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
   .main-nav {
+    display: none;
     width: 100%;
-    gap: 10px 16px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  .main-nav.is-open {
+    display: flex;
   }
 
   .main-nav a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
     font-size: 0.9rem;
   }
 
@@ -952,6 +1001,16 @@ h3 {
     grid-template-columns: 1fr;
     gap: 32px;
     padding-top: 8px;
+  }
+
+  .home-portrait {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .home-copy {
+    grid-row: 2;
+    grid-column: 1;
   }
 
   .home-copy h1 {
