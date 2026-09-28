@@ -516,6 +516,16 @@ h3 {
   line-height: 1.7;
 }
 
+.home-summary p {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.home-summary p + p {
+  margin-top: 12px;
+}
+
 .home-actions {
   display: flex;
   flex-wrap: wrap;
