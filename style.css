@@ -829,6 +829,7 @@ h3 {
 .contact-info p {
   margin: 10px 0;
   color: #222;
+  overflow-wrap: anywhere;
 }
 
 .social-links {
@@ -889,7 +890,50 @@ h3 {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 88%;
+  }
+
+  .project-grid,
+  .contact-layout {
+    gap: 18px;
+  }
+
+  .project-content {
+    padding: 16px;
+  }
+
+  .home-intro {
+    gap: 36px;
+  }
+}
+
 @media only screen and (max-width: 760px) {
+  .nav-wrap {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 0;
+  }
+
+  .main-nav {
+    width: 100%;
+    gap: 10px 16px;
+  }
+
+  .main-nav a {
+    font-size: 0.9rem;
+  }
+
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .page-main {
+    padding: 36px 0 52px;
+  }
+
   .home-main {
     min-height: auto;
   }
@@ -915,24 +959,8 @@ h3 {
     width: calc(100% - 32px);
   }
 
-  .nav-wrap {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 12px;
-    padding: 14px 0;
-  }
-
-  .main-nav {
-    width: 100%;
-    gap: 10px 16px;
-  }
-
-  .main-nav a {
-    font-size: 0.9rem;
-  }
-
   .page-main {
-    padding: 32px 0 48px;
+    padding: 28px 0 40px;
   }
 
   .project-grid,
@@ -972,11 +1000,28 @@ h3 {
   }
 
   .page-hero h1 {
-    font-size: 2.35rem;
+    font-size: 2rem;
+    line-height: 1.15;
   }
 
   .home-copy h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
+  }
+
+  .home-intro {
+    gap: 24px;
+  }
+
+  .home-summary {
+    font-size: 1rem;
+  }
+
+  .page-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .project-content h2 {
+    font-size: 1.2rem;
   }
 
   .out h3,
