@@ -13,7 +13,10 @@
     <header class="page-header">
         <div class="container nav-wrap">
             <a class="brand" href="index.html">Shivam Patel</a>
-            <nav class="main-nav" aria-label="Main navigation">
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="site-navigation" aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="education.html">Education</a>
                 <a href="projects.html" class="active" aria-current="page">Projects</a>
@@ -164,5 +167,6 @@
             </article>
         </section>
     </main>
+    <script src="nav.js" defer></script>
 </body>
 </html>
