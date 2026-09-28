@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Shivam Patel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="page-body">
+    <header class="page-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="index.html">Shivam Patel</a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="education.html">Education</a>
+                <a href="projects.html" class="active" aria-current="page">Projects</a>
+                <a href="experience.html">Experience</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main container">
+        <section class="page-hero small-hero">
+            <p class="eyebrow">Selected Work</p>
+            <h1>Projects</h1>
+            <p class="page-intro">A selection of software, data, and systems projects, from business applications to technical explorations.</p>
+        </section>
+
+        <section class="project-grid" aria-label="Project portfolio">
+            <article class="project-card">
+                <div class="project-art project-art-erp"><span>01 / BUSINESS SYSTEMS</span><strong>QPOOS ERP</strong></div>
+                <div class="project-content">
+                    <p class="stack">Java 21 · Spring Boot · PostgreSQL</p>
+                    <h2>Modular ERP backend</h2>
+                    <p>Backend foundation for accounting, company management, customers, inventory, and expense workflows.</p>
+                    <ul>
+                        <li>Structured as a modular monolith, with domain boundaries designed to support future service extraction.</li>
+                        <li>Models accounting through balanced journal entries and ledger postings.</li>
+                        <li>Includes role-based authentication and authorization with Spring Security.</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/shivampatel183/qpooserp" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-art project-art-visa"><span>02 / MULTI-TENANT PORTAL</span><strong>VisaFlow</strong></div>
+                <div class="project-content">
+                    <p class="stack">Angular · TypeScript · Supabase</p>
+                    <h2>Visa application portal</h2>
+                    <p>A multi-tenant application with distinct workflows for administrators and visa applicants.</p>
+                    <ul>
+                        <li>Supports administrator-managed applicant access and applicant visa forms.</li>
+                        <li>Uses Supabase authentication and PostgreSQL row-level security for tenant-scoped data access.</li>
+                        <li>Separates application, admin, and applicant routes.</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/shivampatel183/VisaFlow-" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-art project-art-orders"><span>03 / REAL-TIME OPERATIONS</span><strong>Restaurant QR Order</strong></div>
+                <div class="project-content">
+                    <p class="stack">Angular · TypeScript · Supabase Realtime</p>
+                    <h2>QR ordering and kitchen board</h2>
+                    <p>A restaurant ordering workflow connecting table-side customer menus with kitchen and admin operations.</p>
+                    <ul>
+                        <li>Customers access a table-specific menu through a QR code and place orders.</li>
+                        <li>Kitchen staff see incoming orders on a live order board; admins manage menus and orders.</li>
+                        <li>Uses Supabase database, realtime updates, authentication, and row-level security without a custom backend.</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/shivampatel183/Restaurant-qr-order" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img class="project-image" src="./Files/ARV%20tune.png" alt="ARV Tune music player interface">
+                <div class="project-content">
+                    <p class="stack">React.js · JavaScript · Web Speech API</p>
+                    <h2>ARV Tune</h2>
+                    <p>A music web app for listening, building playlists, and controlling playback by voice.</p>
+                    <ul>
+                        <li>Supports voice commands for playback actions, including play, pause, next, and volume.</li>
+                        <li>Uses modular React components to keep the interface organized.</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/shivampatel183/arv-tune" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img class="project-image" src="./Files/EDITH.jpg" alt="EDITH personal voice assistant project">
+                <div class="project-content">
+                    <p class="stack">Python</p>
+                    <h2>EDITH voice assistant</h2>
+                    <p>A personal assistant built around voice-activated commands for everyday tasks.</p>
+                    <ul>
+                        <li>Provides weather updates, calendar scheduling, and web search capabilities.</li>
+                        <li>Combines multiple utility actions in a single voice-driven interface.</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/shivampatel183/E.D.I.T.H" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <video class="project-image" controls preload="metadata" playsinline>
+                    <source src="./Files/thevid%20impex%20-%20Made%20with%20Clipchamp.mp4" type="video/mp4">
+                    Video preview of TheVID IMPEX.
+                </video>
+                <div class="project-content">
+                    <p class="stack">HTML · CSS · JavaScript</p>
+                    <h2>TheVID IMPEX</h2>
+                    <p>A responsive business portfolio website presenting company products, services, and achievements.</p>
+                    <ul>
+                        <li>Designed to keep company information accessible across different device sizes.</li>
+                        <li>Built the interface around clear presentation of business offerings.</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/shivampatel183/THEVID-IMPEX" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img class="project-image" src="./Files/ims.png" alt="Inventory management system">
+                <div class="project-content">
+                    <p class="stack">Python · Tkinter · SQLite</p>
+                    <h2>Inventory Management System</h2>
+                    <p>A desktop tool for maintaining and updating inventory records.</p>
+                    <ul>
+                        <li>Supports adding items, updating quantities, and removing inventory.</li>
+                        <li>Uses SQLite to store and retrieve inventory information.</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/shivampatel183/Inventory-Management-System" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img class="project-image" src="./Files/banking.jpeg" alt="Bank marketing campaign data analysis">
+                <div class="project-content">
+                    <p class="stack">Python · Pandas · NumPy · Matplotlib · Seaborn</p>
+                    <h2>Bank marketing analytics</h2>
+                    <p>Predictive analytics project exploring how data models can help inform bank marketing campaigns.</p>
+                    <ul>
+                        <li>Applied exploratory analysis and feature extraction to campaign data.</li>
+                        <li>Compared prediction algorithms and model accuracy to identify useful campaign signals.</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/shivampatel183/--Bank-marketing-campaign-Predictive-analytics-" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img class="project-image" src="./Files/8085.jpg" alt="8085 microprocessor circuit project">
+                <div class="project-content">
+                    <p class="stack">Logisim</p>
+                    <h2>8085 Microprocessor</h2>
+                    <p>A digital logic project exploring the operation and architecture of the 8085 microprocessor.</p>
+                    <ul>
+                        <li>Implemented circuit logic in Logisim to study how the processor operates.</li>
+                        <li>Built practical understanding of processor architecture and digital systems.</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/shivampatel183/8085-microprocessor" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
