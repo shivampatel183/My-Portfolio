@@ -4,7 +4,7 @@ export const blogPosts = [
   {
     id: "spring-boot-pgvector-gemini",
     slug: "spring-boot-pgvector-gemini-rag",
-    title: "Adding AI to Spring Boot with pgvector and Gemini",
+    title: "Learn RAG with Spring Boot, pgvector, and Gemini",
     category: "AI & Engineering",
     date: "September 29, 2026",
     readTime: "5 min read",
