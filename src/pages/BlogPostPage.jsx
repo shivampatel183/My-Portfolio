@@ -4,7 +4,7 @@ import { blogPosts } from "../data/blogPosts";
 
 function BlogSeo({ post }) {
   useEffect(() => {
-    const url = `${window.location.origin}/blog/${post.slug}`;
+    const url = `${window.location.origin}/blogs/${post.slug}`;
     const description = post.excerpt.slice(0, 160);
     const imageUrl = new URL(post.image, window.location.origin).href;
     const values = {
@@ -80,46 +80,6 @@ function BlogSeo({ post }) {
   return null;
 }
 
-function BlogShare({ post }) {
-  const [copied, setCopied] = useState(false);
-  const url = `${window.location.origin}/blog/${post.slug}`;
-  const shareUrl = encodeURIComponent(url);
-  const shareTitle = encodeURIComponent(post.title);
-
-  const copyLink = async () => {
-    try {
-      await navigator.clipboard.writeText(url);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 1800);
-    } catch {
-      window.prompt("Copy this article link:", url);
-    }
-  };
-
-  return (
-    <nav className="blog-share" aria-label="Share this article">
-      <span>Share this article</span>
-      <a
-        href={`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`}
-        target="_blank"
-        rel="noreferrer"
-      >
-        LinkedIn
-      </a>
-      <a
-        href={`https://wa.me/?text=${shareTitle}%20${shareUrl}`}
-        target="_blank"
-        rel="noreferrer"
-      >
-        WhatsApp
-      </a>
-      <button type="button" onClick={copyLink}>
-        {copied ? "Link copied" : "Copy link"}
-      </button>
-    </nav>
-  );
-}
-
 export default function BlogPostPage() {
   const { slug } = useParams();
   const post = blogPosts.find((item) => item.slug === slug);
@@ -154,7 +114,9 @@ export default function BlogPostPage() {
         <span className="feature-caption">Notes from the build</span>
       </div>
       <p className="eyebrow">{post.category}</p>
-      <h1>{post.title}</h1>
+      <div className="blog-post-heading">
+        <h1>{post.title}</h1>
+      </div>
       <p className="blog-meta">
         {post.date} • {post.readTime}
       </p>
@@ -208,8 +170,8 @@ export default function BlogPostPage() {
                     Illustrative map of embedding similarity
                   </title>
                   <desc id="vector-map-desc">
-                    Password and login examples cluster close together, while
-                    an unrelated recipe example sits farther away.
+                    Password and login examples cluster close together, while an
+                    unrelated recipe example sits farther away.
                   </desc>
                   <path className="vector-axis" d="M58 265H680M58 265V32" />
                   <path
@@ -240,10 +202,18 @@ export default function BlogPostPage() {
                     cy="72"
                     r="12"
                   />
-                  <text x="220" y="119">Your question</text>
-                  <text x="310" y="211">Forgot login credentials</text>
-                  <text x="425" y="123">Reset password guide</text>
-                  <text x="505" y="48">Banana bread recipe</text>
+                  <text x="220" y="119">
+                    Your question
+                  </text>
+                  <text x="310" y="211">
+                    Forgot login credentials
+                  </text>
+                  <text x="425" y="123">
+                    Reset password guide
+                  </text>
+                  <text x="505" y="48">
+                    Banana bread recipe
+                  </text>
                   <text className="vector-axis-label" x="60" y="292">
                     Conceptual meaning space — not real vector coordinates
                   </text>
@@ -301,7 +271,6 @@ export default function BlogPostPage() {
           return <p key={index}>{block.text}</p>;
         })}
       </div>
-      <BlogShare post={post} />
       <Link className="project-link" to="/blog">
         ← Back to blog
       </Link>

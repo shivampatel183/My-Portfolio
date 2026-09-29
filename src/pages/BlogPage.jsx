@@ -8,7 +8,7 @@ export default function BlogPage() {
     <>
       <section className="page-hero small-hero">
         <p className="eyebrow">Writing</p>
-        <h1>Blog</h1>
+        <h1>Blogs</h1>
         <p className="page-intro">
           Thoughts, experiments, and practical learnings from software
           engineering and daily life.
@@ -29,7 +29,7 @@ export default function BlogPage() {
             <article className="blog-card page-card" key={post.id}>
               <Link
                 className="blog-image-link"
-                to={`/blog/${post.slug}`}
+                to={`/blogs/${post.slug}`}
                 aria-label={`Read ${post.title}`}
               >
                 <img
@@ -38,15 +38,17 @@ export default function BlogPage() {
                   alt={post.imageAlt}
                 />
               </Link>
+              <div className="blog-card-content">
               <span className="blog-tag">{post.category}</span>
               <h2>{post.title}</h2>
               <p className="blog-meta">
                 {post.date} • {post.readTime}
               </p>
               <p>{post.excerpt}</p>
-              <Link className="project-link" to={`/blog/${post.slug}`}>
+              <Link className="project-link" to={`/blogs/${post.slug}`}>
                 Read article <span aria-hidden="true">→</span>
               </Link>
+              </div>
             </article>
           ))
         )}
