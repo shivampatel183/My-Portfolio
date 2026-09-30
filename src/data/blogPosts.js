@@ -232,7 +232,11 @@ export const blogPosts = [
       { type: "heading", text: "Try It Yourself" },
       {
         type: "paragraph",
-        text: "I've shared the demo so you can run it locally. The repository link will be added here when available.",
+        text: "I've shared the demo so you can run it locally. Find the repository on GitHub:",
+        link: {
+          text: "spring-boot-rag-pgvector",
+          url: "https://github.com/shivampatel183/spring-boot-rag-pgvector",
+        },
       },
       {
         type: "paragraph",
