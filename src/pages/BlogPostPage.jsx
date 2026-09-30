@@ -268,7 +268,19 @@ export default function BlogPostPage() {
               </List>
             );
           }
-          return <p key={index}>{block.text}</p>;
+          return (
+            <p key={index}>
+              {block.text}
+              {block.link && (
+                <>
+                  {" "}
+                  <a href={block.link.url} target="_blank" rel="noreferrer">
+                    {block.link.text}
+                  </a>
+                </>
+              )}
+            </p>
+          );
         })}
       </div>
       <Link className="project-link" to="/blog">
