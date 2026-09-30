@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import SiteLayout from "./components/SiteLayout";
 import BlogPage from "./pages/BlogPage";
 import BlogPostPage from "./pages/BlogPostPage";
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/experience" element={<ExperiencePage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
+      <Analytics />
     </SiteLayout>
   );
 }
